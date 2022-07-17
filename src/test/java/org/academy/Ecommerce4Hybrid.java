@@ -49,7 +49,7 @@ public class Ecommerce4Hybrid extends AndroidBaseTest {
 
     @DataProvider
     public Object[][] getData() throws IOException {
-        List<HashMap<String, String>> data = getJsonData(System.getProperty("user.dir") + "/src/test/java/org/academy/testData/eCommerce.json");
+        List<HashMap<String, String>> data = getJsonData(System.getProperty("user.dir") + "/src/test/java/org/academy/testData/Ecommerce.json");
         //	return new Object[][] { {"keshav","female","Argentina"},{"jha MR","male","Argentina"}  };
         return new Object[][]{{data.get(0)}, {data.get(1)}};
     }

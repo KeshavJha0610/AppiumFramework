@@ -10,7 +10,7 @@ Technologies/Tools used in building the framework
 - Java - Programming language
 - TestNG - Test Management library
 - Extent Reports - Reporting framework
-- JSON/Excel - Test Data
+- JSON - Test Data
 - XML - Static text
 - GitHub - Version control
 - Jenkins - CI/CD
@@ -31,5 +31,5 @@ Framework implements below best practices
 - Demonstrates how to define UI elements that are common across pages (e.g. menu bar, side bar, etc.)
 - How to recover from test failure/ how to write fail safe test cases
 - Scrolling for both Android and iOS (using touchaction, uiScrollable, mobile:scroll)
-- Demonstrates how to effectively capture Screenshots/Videos
+- Demonstrates how to effectively capture Screenshots
 - Integrated with Extent Reporting framework (supports parallel, screenshots, logging test steps)

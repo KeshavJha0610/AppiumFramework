@@ -36,7 +36,7 @@ public class AndroidBaseTest extends AppiumUtils{
 			
 								
 			UiAutomator2Options options = new UiAutomator2Options();
-			options.setDeviceName(prop.getProperty("AndroidDeviceNames")); //emulator
+			options.setDeviceName(prop.getProperty("AndroidDeviceName")); //emulator
 			//options.setDeviceName("Android Device");// real device		
 			options.setChromedriverExecutable("/Users/keshav.jha/Downloads/chromedriver");
 			options.setApp(System.getProperty("user.dir")+"/src/test/java/org/academy/resources/General-Store.apk");
