@@ -1,19 +1,12 @@
 [
-
-{
-   "name":"rahul shetty",
-   "gender": "Female",
-   "country": "Argentina"
-    
-    
-},
-
-{
-    "name":"shetty MR",
+  {
+    "name": "keshav jha",
+    "gender": "Female",
+    "country": "Argentina"
+  },
+  {
+    "name": "jha MR",
     "gender": "male",
     "country": "Argentina"
-    
-    
-    
-}
+  }
 ]

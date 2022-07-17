@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.Activity;
 
-public class eCommerce_tc_2 extends AndroidBaseTest {
+public class Ecommerce2 extends AndroidBaseTest {
 
 
     @BeforeMethod
@@ -17,15 +17,11 @@ public class eCommerce_tc_2 extends AndroidBaseTest {
         //screen to home page
         Activity activity = new Activity("com.androidsample.generalstore", "com.androidsample.generalstore.MainActivity");
         driver.startActivity(activity);
-
-
     }
 
     @Test
-
-    public void FillForm_ErrorValidation() throws InterruptedException {
-
-        //	driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Rahul Shetty");
+    public void fillForm_errorValidation() {
+        //	driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Keshav");
         driver.hideKeyboard();
         driver.findElement(By.xpath("//android.widget.RadioButton[@text='Female']")).click();
         driver.findElement(By.id("android:id/text1")).click();
@@ -34,15 +30,12 @@ public class eCommerce_tc_2 extends AndroidBaseTest {
         driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
         String toastMessage = driver.findElement(By.xpath("(//android.widget.Toast)[1]")).getAttribute("name");
         AssertJUnit.assertEquals(toastMessage, "Please your name");
-
-
     }
 
 
     @Test
-    public void FillForm_PositiveFlow() throws InterruptedException {
-
-        driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Rahul Shetty");
+    public void fillForm_positiveFlow() {
+        driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Keshav");
         driver.hideKeyboard();
         driver.findElement(By.xpath("//android.widget.RadioButton[@text='Female']")).click();
         driver.findElement(By.id("android:id/text1")).click();
@@ -50,7 +43,5 @@ public class eCommerce_tc_2 extends AndroidBaseTest {
         driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();
         driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
         AssertJUnit.assertTrue(driver.findElements(By.xpath("(//android.widget.Toast)[1]")).size() < 1);
-
-
     }
 }
